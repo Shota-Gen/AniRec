@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http_equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title> AniRec </title>
+</head>
+<body>
+<div class="h1">
+        <p>AniRec <span id="desc">the place to find anime you enjoy </span> </p>
+</div>
+<div class="nav">
+        <a class="active" id="fNav" href="/">Home</a>
+        <a href="my.html">My Personal Recs</a>
+        <a href="about.html">About</a>
+       <form action="{{ url_for('search') }}" method="post">>
+               <p><button type="submit" value = "submit"><i class="fa fa-search"></i></button></p>
+               <p><input type="text" placeholder="Search Anime" name="search"></p>
+        </form>
+</div>
+<div class="h2">
+        <p>Genres</p>
+</div>
+<div class="h3">
+        <p>Search for anime recommendations based on genre</p>
+</div>
+<div class="btn-group">
+        <button class="off" id="1" onclick="changeColor(1)">Action</button>
+        <button class="off" id="2" onclick="changeColor(2)">Adventure</button>
+        <button class="off" id="3" onclick="changeColor(3)">Comedy</button>
+        <button class="off" id="4" onclick="changeColor(4)">Demons</button>
+        <button class="off" id="5" onclick="changeColor(5)">Drama</button>
+        <button class="off" id="6" onclick="changeColor(6)">Ecchi</button>
+        <button class="off" id="7" onclick="changeColor(7)">Fantasy</button>
+        <button class="off" id="8" onclick="changeColor(8)">Game</button>
+        <button class="off" id="9" onclick="changeColor(9)">Harem</button>
+        <button class="off" id="10" onclick="changeColor(10)">Historical</button>
+        <button class="off" id="11" onclick="changeColor(11)">Horror</button>
+        <button class="off" id="12" onclick="changeColor(12)">Josei</button>
+        <button class="off" id="13" onclick="changeColor(13)">Kids</button>
+        <button class="off" id="14" onclick="changeColor(14)">Magic</button>
+        <button class="off" id="15" onclick="changeColor(15)">Martial Arts</button>
+        <button class="off" id="16" onclick="changeColor(16)">Mecha</button>
+        <button class="off" id="17" onclick="changeColor(17)">Military</button>
+        <button class="off" id="18" onclick="changeColor(18)">Music</button>
+        <button class="off" id="19" onclick="changeColor(19)">Mystery</button>
+        <button class="off" id="20" onclick="changeColor(20)">Police</button>
+        <button class="off" id="21" onclick="changeColor(21)">Psychological</button>
+        <button class="off" id="22" onclick="changeColor(22)">Romance</button>
+        <button class="off" id="23" onclick="changeColor(23)">Samurai</button>
+        <button class="off" id="24" onclick="changeColor(24)">School</button>
+        <button class="off" id="25" onclick="changeColor(25)">Sci-Fi</button>
+        <button class="off" id="26" onclick="changeColor(26)">Seinen</button>
+        <button class="off" id="27" onclick="changeColor(27)">Shoujo</button>
+        <button class="off" id="28" onclick="changeColor(28)">Shoujo Ai</button>
+        <button class="off" id="29" onclick="changeColor(29)">Shounen</button>
+        <button class="off" id="30" onclick="changeColor(30)">Shounen Ai</button>
+        <button class="off" id="31" onclick="changeColor(31)">Slice of Life</button>
+        <button class="off" id="32" onclick="changeColor(32)">Sports</button>
+        <button class="off" id="33" onclick="changeColor(33)">Super Power</button>
+        <button class="off" id="34" onclick="changeColor(34)">Supernatural</button>
+        <button class="off" id="35" onclick="changeColor(35)">Thriller</button>
+</div>
+<form action="{{ url_for('rec') }}" method="post">
+        <div class="search">
+            <button type="submit" id="submit" name="submit" value="">Search</button>
+        </div>
+</form>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"> </script>
+</body>
+</html>

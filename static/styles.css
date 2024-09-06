@@ -1,0 +1,145 @@
+:root {
+    --black: #011627;
+    --white: #FDFFFC;
+    --cyan: #2EC4B6;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--white);
+}
+
+.h1 {
+    margin-top: -30px;
+    margin-bottom: -50px;
+    text-align: left;
+    color: #FDFFFC;
+    background-color: var(--black);
+    padding: 1px;
+}
+
+.h1 p{
+    margin-left: 100px;
+    font-size: 40px;
+}
+
+#desc {
+    font-size: 15px;
+}
+
+
+.nav {
+    margin-top: 10px;
+    padding: 30px;
+    overflow: hidden;
+    background-color: var(--black);
+}
+
+.nav a{
+    border-radius: 25px;
+    font-size: 110%;
+    color: var(--white);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#fNav {
+    margin-left: 100px;
+}
+
+.nav input{
+    float: right;
+}
+
+.nav button{
+    float: right;
+}
+
+.active, .nav a:hover{
+    background-color: var(--cyan);
+}
+
+.h2 {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.h3 {
+    text-align: center;
+    font-size: 15px;
+    color: var(--black);
+}
+
+.h4 {
+    text-align: left;
+    font-size: 18px;
+    color: var(--black);
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.h4 img{
+    width: 800px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.info{
+    margin-bottom: 60px;
+    font-size: 15px;
+}
+
+.btn-group {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.btn-group button {
+   margin: 4px;
+   background-color: var(--cyan);
+   border: 1px;
+   border-style: solid;
+   border-color: #011627;
+   border-radius: 14px;
+   color: var(--white); /* White text */
+   padding: 10px 24px; /* Some padding */
+   cursor: pointer; /* Pointer/hand icon */
+   width: 140px;
+   height: 60px;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: var(--black);
+}
+
+.search {
+    margin: auto;
+    width: 140px;
+    padding: 10px;
+}
+
+.search button{
+    margin: auto;
+    width: 140px;
+    padding: 10px;
+    background-color: var(--black);
+    border: 1px;
+    border-style: solid;
+    border-color: #011627;
+    border-radius: 14px;
+    color: var(--white); /* White text */
+    cursor: pointer; /* Pointer/hand icon */
+    height: 60px;
+}
+
+.search button:hover {
+    background-color: var(--cyan);
+}
+
+

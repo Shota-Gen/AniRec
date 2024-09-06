@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http_equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> AniRec </title>
+</head>
+<body>
+<div class="h1">
+        <p>AniRec <span id="desc">the place to find anime you enjoy </span> </p>
+</div>
+
+<div class="nav">
+        <a id="fNav" href="/">Home</a>
+        <a class= "active" href="my.html">My Personal Recs</a>
+        <a href="about.html">About</a>
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Search Anime" name="search">
+</div>
+<div class="h2">
+        <p>My Favorites (In Order)</p>
+</div>
+<div class="h4">
+    <p> Code Geass</p>
+    <img src="{{ url_for('static', filename='photos/Code Geass.jpeg') }}" alt="Code Geass">
+    <p class="info"> Genres: Action, Mecha, Military, Sci-Fi, Super Power </p>
+    <p> The Irregular at Magic High School</p>
+    <img src="{{ url_for('static', filename='photos/Mahouka 2.jpg') }}" alt="Mahouka">
+    <p class="info"> Genres: Magic, Romance, School, Sci-Fi, Supernatural </p>
+    <p> March Comes in like a Lion</p>
+    <img src="{{ url_for('static', filename='photos/March 1.jpg') }}" alt="March">
+    <p class="info"> Genres: Drama, Game, Seinen, Slice of Life </p>
+    <p> Akame ga Kill!</p>
+    <img src="{{ url_for('static', filename='photos/Akame 2.jpg') }}" alt="Akame">
+    <p class="info"> Genres: Action, Adventure, Fantasy </p>
+    <p> Attack on Titan</p>
+    <img src="{{ url_for('static', filename='photos/Titan 2.jpg') }}" alt="Titan">
+    <p class="info"> Genres: Action, Drama, Fantasy, Shounen, Super Power </p>
+    <p> Haikyuu</p>
+    <img src="{{ url_for('static', filename='photos/Haikyuu 1.jpg') }}" alt="Haikyuu">
+    <p class="info"> Genres: Comedy, Drama, School, Shounen, Sports </p>
+    <p> Guilty Crown</p>
+    <img src="{{ url_for('static', filename='photos/Guilty 2.png') }}" alt="Guilty">
+    <p class="info"> Genres: Action, Drama, Sci-Fi, Super Power </p>
+    <p> Zankyou no Terror</p>
+    <img src="{{ url_for('static', filename='photos/Terror 1.jpg') }}" alt="Terror">
+    <p class="info"> Genres: Mystery, Psychological, Thriller </p>
+    <p> Demon Slayer</p>
+    <img src="{{ url_for('static', filename='photos/Demon 2.png') }}" alt="Kimetsu">
+    <p class="info"> Genres: Action, Demons, Historical, Shounen, Supernatural </p>
+    <p> Psycho-Pass:</p>
+    <img src="{{ url_for('static', filename='photos/Psycho 2.jpg') }}" alt="Psycho">
+    <p class="info"> Genres: Action, Sci-Fi, Police, Psychological, Thriller </p>
+    <p> K </p>
+    <img src="{{ url_for('static', filename='photos/K 2.jpg') }}" alt="K Project">
+    <p class="info"> Genres: Action, Mystery, Super Power, Supernatural </p>
+    <p> After the Rain </p>
+    <img src="{{ url_for('static', filename='photos/Rain 1.jpg') }}" alt="Ameagari">
+    <p class="info"> Genres: Slice of Life, Drama, Romance, Seinen </p>
+    <p> Lord Marksman and Vanadis </p>
+    <img src="{{ url_for('static', filename='photos/Lord 1.jpg') }}" alt="Vanadis">
+    <p class="info"> Genres: Adventure, Ecchi, Fantasy, Harem, Romance </p>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"> </script>
+</body>
+</html>

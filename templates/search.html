@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http_equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title> AniRec </title>
+</head>
+<body>
+<div class="h1">
+        <p>AniRec <span id="desc">the place to find anime you enjoy </span> </p>
+</div>
+<div class="nav">
+        <a class="active" id="fNav" href="/">Home</a>
+        <a href="my.html">My Personal Recs</a>
+        <a href="about.html">About</a>
+        <form action="{{ url_for('search') }}" method="post">>
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Search Anime" name="search">
+        </form>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"> </script>
+</body>
+</html>
